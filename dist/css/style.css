@@ -1,0 +1,131 @@
+body {
+  background-color: #f1f3f4;
+  font-family: Roboto,sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sign_in_btn {
+  color: #00A1FF;
+  border: 1px solid #D9DBDC;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-right: 8px;
+}
+
+.sign_up_btn {
+  color: white;
+  background-color: #00A1FF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-left: 8px;
+}
+
+.sign_up_btn_big {
+  color: white;
+  background-color: #00A1FF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+  margin-top: 4px;
+  border: 0px;
+}
+
+.modal_background {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_card_body {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 312px;
+  padding: 24px;
+}
+
+.modal_card_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.modal_close_btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.modal_card_paragraph {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.input {
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  width: calc(100% - 14px);
+  height: 40px;
+  font-size: 16px;
+  padding: 0px;
+  line-height: 24px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.input:focus {
+  border: 1px solid #00A1FF;
+}
+
+.input_label {
+  color: #757575;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form_container {
+  width: 100%;
+  position: relative;
+}
+
+.disabled {
+  display: none;
+}
