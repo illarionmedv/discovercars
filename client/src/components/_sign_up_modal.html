@@ -1,0 +1,42 @@
+<div class="modal_background disabled animate__animated" id="sign_up_modal">
+    <form class="modal_card_body" method="POST" id="sign_up_form" ref="sign_up_form">
+        <div class="modal_card_title">
+            Create your account
+        </div>
+        <a class="modal_close_btn" v-on:click="closeOnCross()"><img src="img/Cross.svg" alt=""></a>
+
+        <div class="modal_card_paragraph">
+            Create an account to use DiscoverCars services easily.
+        </div>
+
+        <div class="error_message_box"  v-if="submit_validation">
+            {{submit_validation}}
+        </div>
+
+        <div class="form_container">
+
+        <div class="form_group">    
+        <label for="sign_up_email" class="input_label">Email address</label>
+        <input type="email" class="input" v-bind:class = "(msg.email)?'input_error':''" required v-model="user_email" name="email">
+        <div class='error_text' v-if="msg.email">{{msg.email}}</div>
+        </div>
+
+        <div class="form_group">
+        <label for="sign_up_password" class="input_label">Password</label>
+        <input type="password" class="input" v-bind:class = "(msg.password)?'input_error':''" required v-model="user_password" name="password">
+        <div class='error_text' v-if="msg.password">{{msg.password}}</div>
+        </div>
+
+        <a class="btn sign_up_btn_big" v-on:click="submit" >Get started</a>
+
+        </div>
+
+        <div class="custom_hr"></div>
+
+        <div class="sub_paragraph">Already have an account? <a v-on:click="SignSwitch()">Sign in</a></div>
+
+        <div class="terms_paragraph">By proceeding, you agree to our <a href="">Terms of Use</a> and confirm you have read our <a href="">Privacy Policy</a>.</div>
+
+    </form>
+</div>
+

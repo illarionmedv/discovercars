@@ -70,9 +70,6 @@ a{
 }
 
 .modal_background{
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
     position: absolute;
     z-index: 99;
     display: flex;
@@ -226,4 +223,11 @@ a{
 .terms_paragraph>a{
     text-decoration: underline;
     color: inherit;
+}
+
+.background{
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }

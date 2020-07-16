@@ -1,5 +1,5 @@
-<div class="modal_background disabled" id="sign_in_modal">
-    <div class="modal_card_body">
+<div class="modal_background disabled animate__animated" id="sign_in_modal">
+    <form class="modal_card_body" method="POST" id="sign_in_form">
         <div class="modal_card_title">
             Sign in
         </div>
@@ -9,24 +9,23 @@
             You can sign in using your DiscoverCars account to access our services.
         </div>
 
-        <div class="error_message_box">
-            Most likely your username or password was entered incorrectly.
+        <div class="error_message_box disabled">
+            
         </div>
 
         <div class="form_container">
 
         <div class="form_group">
         <label for="sign_in_email" class="input_label">Email address</label>
-        <input type="text" class="input input_error" name="sign_in_email" id="sign_in_email" required>
-        <div class="error_text">Invalid email address</div>
+        <input type="email" class="input" name="email" id="sign_in_email" required>
         </div>
 
         <div class="form_group">
         <label for="sign_in_password" class="input_label">Password</label>
-        <input type="password" class="input" name="sign_in_password" id="sign_in_password" required>
+        <input type="password" class="input" name="password" id="sign_in_password" required>
         </div>
 
-        <button class="btn sign_up_btn_big">Sign in</button>
+        <button class="btn sign_up_btn_big" type="submit">Sign in</button>
 
         <a href=""><div class="forgot_password">Forgot password?</div></a>
 
@@ -34,9 +33,9 @@
 
         <div class="custom_hr"></div>
 
-        <div class="sub_paragraph">Don't have an account yet? <a href="">Sign up</a></div>
+        <div class="sub_paragraph">Don't have an account yet? <a id="sign_up_switch">Sign up</a></div>
 
         <div class="terms_paragraph">By proceeding, you agree to our <a href="">Terms of Use</a> and confirm you have read our <a href="">Privacy Policy</a>.</div>
 
-    </div>
+    </form>
 </div>
